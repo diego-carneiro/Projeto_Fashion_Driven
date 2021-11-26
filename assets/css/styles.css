@@ -12,7 +12,7 @@
 }
 /*:::::HEADER END:::::*/
 
-/*:::::PAGE CONTENT:::::*/
+/*:::::MAIN CONTENT:::::*/
 .box{
     margin-top: -1px;
     width: 683px;
@@ -21,11 +21,12 @@
 .allOptions{
     width: 400px;
 }
-.chooseModel{
+.clothingCustomization{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: white;
 }
 .singleOption{
     display: flex;
@@ -36,7 +37,8 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background-color: crimson;
+    background-color: #F2F2F2;
+    border:  0.5px solid #C4C4C4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,12 +69,32 @@
 .illustration{
     background-color: #404EED;
 }
-/*:::::PAGE CONTENT END:::::*/
+/*:::::MAIN CONTENT END:::::*/
 
-/*:::::HEADER:::::*/
-/*:::::HEADER END:::::*/
-/*:::::HEADER:::::*/
-/*:::::HEADER END:::::*/
+/*:::::LAST ORDERS:::::*/
+.lastOrders{
+    width: 1366px;
+    height: 342px;
+    background-color: #F2F2F2;
+}
+
+/*:::::LAST ORDERS END:::::*/
+/*:::::CUSTOM CLASS:::::*/
+.selected{
+    border:  3px solid blue;
+}
+.orderBox{
+    width: 201px;
+    height: 236px;
+    border-radius: 10px;
+    background-color: orange;
+}
+.orderBox img{
+    width: 180px;
+    height: 180px;
+}
+/*:::::CUSTOM CLASS END:::::*/
+
 /*:::::HEADER:::::*/
 /*:::::HEADER END:::::*/
 /*:::::HEADER:::::*/
@@ -89,7 +111,8 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5e5; 
 }
 .content{
     margin: 0 auto;
@@ -99,7 +122,3 @@ body{
     width: 1366px;
 }
 /*:::::STRUCTURAL END:::::*/
-.selected{
-
-    border:  2px solid blue;
-}
