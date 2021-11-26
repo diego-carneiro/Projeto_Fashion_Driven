@@ -1,21 +1,45 @@
 const getURL = "https://mock-api.driven.com.br/api/v4/shirts-api/shirts";
 const postURL = "https://mock-api.driven.com.br/api/v4/shirts-api/shirts";
 
-function selecionar(opcao) {
-    console.log(opcao)
+function userName () {
 
-    const vo = opcao.parentNode.parentNode;
-    console.log(vo)
+    const name = prompt("Entre com o seu nome")
+    console.log(name)
+}
+userName();
 
-    console.log(vo.querySelector(".selected"))
+function selectModel(option) {
 
-    if (vo.querySelector(".selected")) {
-        const preSelected = vo.querySelector(".selected")
-        console.log(preSelected)
+    const iconGroup = option.parentNode.parentNode;
+
+    if (iconGroup.querySelector(".selected")) {
+        const preSelected = iconGroup.querySelector(".selected")
         preSelected.classList.remove("selected")
     }
 
-    opcao.classList.add("selected")
+    option.classList.add("selected")
+}
+function selectCollar(option) {
+
+    const iconGroup = option.parentNode.parentNode;
+
+    if (iconGroup.querySelector(".selected")) {
+        const preSelected = iconGroup.querySelector(".selected")
+        preSelected.classList.remove("selected")
+    }
+
+    option.classList.add("selected")
+}
+function selectCloth(option) {
+
+    const iconGroup = option.parentNode.parentNode;
+
+    if (iconGroup.querySelector(".selected")) {
+        const preSelected = iconGroup.querySelector(".selected")
+        preSelected.classList.remove("selected")
+    }
+
+    option.classList.add("selected")
 }
 
 function lastOrdersRequest() {
@@ -38,7 +62,7 @@ function lastOrdersRendering(list) {
         allItens.innerHTML += `
             <div class="orderBox">
                 <img src="${item.image}">
-                <p>${item.owner}</p>
+                <p><strong>Criador:&nbsp</strong>${item.owner}</p>
             </div>
         `
     });

@@ -20,6 +20,7 @@
 }
 .allOptions{
     width: 400px;
+    margin-top: 38px;
 }
 .clothingCustomization{
     display: flex;
@@ -27,6 +28,9 @@
     align-items: center;
     flex-direction: column;
     background-color: white;
+}
+.clothingCustomization p{
+    font-size: 18px;
 }
 .singleOption{
     display: flex;
@@ -42,6 +46,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 9px;
+    margin-bottom: 8px;
 }
 .iconGroup{
     display: flex;
@@ -53,11 +59,17 @@
     width: 400px;
     height: 40px;
     background-color: #C4C4C4;
-    border-radius: 10px;  
+    border-radius: 10px;
+    margin-bottom: 39px; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.confirmButton{
+.confirmOrder p{
     text-align: center;
     color: #FFFFFF;
+    font-size: 20px;
 }
 #imgInput{
     width: 400px;
@@ -65,10 +77,14 @@
     border: none;  
     outline: none;
     background-color: #F2F2F2;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    border-radius: 10px;
 }
 .illustration{
     background-color: #404EED;
 }
+
 /*:::::MAIN CONTENT END:::::*/
 
 /*:::::LAST ORDERS:::::*/
@@ -76,32 +92,46 @@
     width: 1366px;
     height: 342px;
     background-color: #F2F2F2;
-}
+    padding: 30px 118px 32px 118px;
 
-/*:::::LAST ORDERS END:::::*/
-/*:::::CUSTOM CLASS:::::*/
-.selected{
-    border:  3px solid blue;
+    display: flex;
+    flex-direction: column;   
+}
+.lastOrdersTitle{
+
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.allItens{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
 }
 .orderBox{
     width: 201px;
     height: 236px;
     border-radius: 10px;
-    background-color: orange;
+    background-color: #FFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 17px;
 }
 .orderBox img{
     width: 180px;
     height: 180px;
 }
+.orderBox p{
+    font-size: 20px;
+}
+/*:::::LAST ORDERS END:::::*/
+/*:::::CUSTOM CLASS:::::*/
+.selected{
+    border:  3px solid blue;
+}
 /*:::::CUSTOM CLASS END:::::*/
-
-/*:::::HEADER:::::*/
-/*:::::HEADER END:::::*/
-/*:::::HEADER:::::*/
-/*:::::HEADER END:::::*/
-/*:::::HEADER:::::*/
-/*:::::HEADER END:::::*/
-
 /*:::::STRUCTURAL:::::*/
 .container{
     display: flex;
@@ -120,5 +150,8 @@ body{
     display: flex;
     flex-direction: column;
     width: 1366px;
+}
+strong{
+    font-weight: bold;
 }
 /*:::::STRUCTURAL END:::::*/

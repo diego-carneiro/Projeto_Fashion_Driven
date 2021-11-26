@@ -24,77 +24,85 @@
             <section class="box">
                 <div class="clothingCustomization">
                     <div class="allOptions">
-                        <div class="interaction">Escolha o modelo</div>
+                        <div class="interaction">
+                            <p>Escolha o modelo</p>
+                        </div>
                         <div class="iconGroup">
                             <figure class="singleOption">
-                                <div class="circle model" onclick="selecionar(this)">
+                                <div class="circle model" onclick="selectModel(this)">
                                     <img class="" src="./assets/img/tshirt.png">
                                 </div>
                                 <p>T-shirt</p>
                             </figure>
                             <figure class="singleOption">
-                                <div class="circle model" onclick="selecionar(this)">
-                                    <img class="" src="./assets/img/tshirt.png">
+                                <div class="circle model" onclick="selectModel(this)">
+                                    <img class="" src="./assets/img/Camiseta.png">
                                 </div>
-                                <p>T-shirt</p>
+                                <p>Camiseta</p>
                             </figure>
                             <figure class="singleOption">
-                                <div class="circle model" onclick="selecionar(this)">
-                                    <img class="" src="./assets/img/tshirt.png">
+                                <div class="circle model" onclick="selectModel(this)">
+                                    <img class="" src="./assets/img/Mangalonga.png">
                                 </div>
-                                <p>T-shirt</p>
+                                <p>Manga longa</p>
                             </figure>
 
                         </div>
-                        <div class="interaction">Escolha o modelo</div>
+                        <div class="interaction">   
+                            <p>Escolha a gola</p>
+                        </div>
                         <div class="iconGroup">
                             <figure class="singleOption">
-                                <div class="circle">
-                                    <img class="" src="./assets/img/tshirt.png">
+                                <div class="circle" onclick="selectCollar(this)">
+                                    <img class="" src="./assets/img/GolaV.png">
                                 </div>
-                                <p>T-shirt</p>
+                                <p>Gola V</p>
                             </figure>
                             <figure class="singleOption">
-                                <div class="circle">
-                                    <img class="" src="./assets/img/tshirt.png">
+                                <div class="circle" onclick="selectCollar(this)">
+                                    <img class="" src="./assets/img/GolaRedonda.png">
                                 </div>
-                                <p>T-shirt</p>
+                                <p>Gola Redonda</p>
                             </figure>
                             <figure class="singleOption">
-                                <div class="circle">
-                                    <img class="" src="./assets/img/tshirt.png">
+                                <div class="circle" onclick="selectCollar(this)">
+                                    <img class="" src="./assets/img/GolaPolo.png">
                                 </div>
-                                <p>T-shirt</p>
+                                <p>Gola polo</p>
                             </figure>
                         </div>
-                        <div class="interaction">Escolha o modelo</div>
+                        <div class="interaction">   
+                            <p>Escolha o tecido</p>
+                        </div>
                         <div class="iconGroup">
                             <figure class="singleOption">
-                                <div class="circle">
-                                    <img class="" src="./assets/img/tshirt.png">
+                                <div class="circle" onclick="selectCloth(this)">
+                                    <img class="" src="./assets/img/Seda.png">
                                 </div>
-                                <p>T-shirt</p>
+                                <p>Seda</p>
                             </figure>
                             <figure class="singleOption">
-                                <div class="circle">
-                                    <img class="" src="./assets/img/tshirt.png">
+                                <div class="circle" onclick="selectCloth(this)">
+                                    <img class="" src="./assets/img/Algodão.png">
                                 </div>
-                                <p>T-shirt</p>
+                                <p>Algodão</p>
                             </figure>
                             <figure class="singleOption">
-                                <div class="circle">
-                                    <img class="" src="./assets/img/tshirt.png">
+                                <div class="circle" onclick="selectCloth(this)">
+                                    <img class="" src="./assets/img/Poliester.png">
                                 </div>
-                                <p>T-shirt</p>
+                                <p>Poliéster</p>
                             </figure>
                         </div>
                     </div>
                     <div class="imagemInput">
-                        <div class="interaction">Imagem de referência</div>
-                        <input placeholder="Insira o link" id="imgInput">
+                        <div class="interaction">
+                            <p>Imagem de referência</p>
+                        </div>
+                        <input placeholder="   Insira o link" id="imgInput">
                     </div>
                     <div class="confirmOrder">
-                        <p class="confirmButton">Confirmar pedido</p>
+                        <p>Confirmar pedido</p>
                     </div>
                 </div>
 
@@ -105,9 +113,10 @@
             </aside>
         </div>
         <div class="lastOrders">
-            <div class="allItens">
-           
-            </div>
+            <div class="lastOrdersTitle">
+                <p>Ultimos pedidos</p>
+            </div>   
+            <div class="allItens"></div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
