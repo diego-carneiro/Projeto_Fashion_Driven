@@ -71,6 +71,7 @@
     color: #FFFFFF;
     font-size: 20px;
 }
+
 #imgInput{
     width: 400px;
     height: 40px;    
@@ -130,6 +131,9 @@
 /*:::::CUSTOM CLASS:::::*/
 .selected{
     border:  3px solid blue;
+}
+.buttonEnabled{
+    background-color: #404EED;
 }
 /*:::::CUSTOM CLASS END:::::*/
 /*:::::STRUCTURAL:::::*/
