@@ -140,10 +140,11 @@ function submitOrder() {
 
 function encomendarCriada(positon) {
 
+    let check = confirm("Tem certeza que deseja pedir este item?");
 
-    // if(lalala === false){
-    //     return
-    // }
+    if(check === false){
+        return
+    }
 
     const pedidosDeOutros = ultimasCamisetas[positon]
 
