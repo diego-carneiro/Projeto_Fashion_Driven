@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
 }
-.logo_nome{
+.logo-nome{
     margin-left: 80px;
 }
 /*:::::HEADER END:::::*/
@@ -18,21 +18,21 @@
     width: 683px;
     height: 785px;
 }
-.allOptions{
+.all-options{
     width: 400px;
     margin-top: 38px;
 }
-.clothingCustomization{
+.clothing-customization{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: white;
 }
-.clothingCustomization p{
+.clothing-customization p{
     font-size: 18px;
 }
-.singleOption{
+.single-option{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,13 +49,13 @@
     margin-top: 9px;
     margin-bottom: 8px;
 }
-.iconGroup{
+.icon-group{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 32px;
 }
-.confirmOrder{
+.confirm-order{
     width: 400px;
     height: 40px;
     background-color: #C4C4C4;
@@ -66,7 +66,7 @@
     align-items: center;
     justify-content: center;
 }
-.confirmOrder p{
+.confirm-order p{
     text-align: center;
     color: #FFFFFF;
     font-size: 20px;
@@ -89,7 +89,7 @@
 /*:::::MAIN CONTENT END:::::*/
 
 /*:::::LAST ORDERS:::::*/
-.lastOrders{
+.last-orders{
     width: 1366px;
     height: 342px;
     background-color: #F2F2F2;
@@ -98,17 +98,17 @@
     display: flex;
     flex-direction: column;   
 }
-.lastOrdersTitle{
+.last-orders-title{
 
     font-size: 24px;
     margin-bottom: 15px;
 }
-.allItens{
+.all-itens{
     display: flex;
     align-items: center;
     overflow-x: scroll;
 }
-.orderBox{
+.order-box{
     width: 201px;
     height: 236px;
     border-radius: 10px;
@@ -120,11 +120,11 @@
     align-items: center;
     margin-right: 17px;
 }
-.orderBox img{
+.order-box img{
     width: 180px;
     height: 180px;
 }
-.orderBox p{
+.order-box p{
     font-size: 20px;
 }
 /*:::::LAST ORDERS END:::::*/
@@ -132,7 +132,7 @@
 .selected{
     border:  3px solid blue;
 }
-.buttonEnabled{
+.button-enabled{
     background-color: #404EED;
 }
 /*:::::CUSTOM CLASS END:::::*/

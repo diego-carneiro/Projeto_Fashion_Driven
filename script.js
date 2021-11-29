@@ -11,6 +11,7 @@ let imageLink = " ";
 let ownerName = " ";
 let authorName = " ";
 let finishedOrder = " ";
+let ultimasCamisetas = [];
 
 
 function userName() {
@@ -100,13 +101,13 @@ function selectMaterial(option) {
 
 function finishOrder() {
 
-    const button = document.querySelector(".confirmOrder")
-
-    if (count === 3) {
-        button.classList.add("buttonEnabled")
-    }
+    const button = document.querySelector(".confirm-order")
 
     imageLink = document.getElementById("imgLink").value;
+    
+    if (count === 3 && imageLink !== "") {
+        button.classList.add("button-enabled")
+    }
 
 }
 finishOrder();
@@ -128,17 +129,50 @@ function submitOrder() {
     alert(`Sua encomenta é uma roupa com as seguintes características: -${modelHTML} -${neckHTML} -${materialHTML}`);
 
     const promise = axios.post(postURL, finishedOrder);
-    promise.then();
+    promise.then(response => {
+
+        lastOrdersRequest()
+
+    });
     promise.catch((error) => alert(error + "Ops, não conseguimos processar sua encomenda"));
     
+}
+
+function encomendarCriada(positon) {
+
+
+    // if(lalala === false){
+    //     return
+    // }
+
+    const pedidosDeOutros = ultimasCamisetas[positon]
+
+    const pedirDeOutros =  {
+        model: pedidosDeOutros.model,
+        neck: pedidosDeOutros.neck,
+        material: pedidosDeOutros.material,
+        image: pedidosDeOutros.image,
+        owner: `${authorName}`,
+        author: pedidosDeOutros.owner
+    }
+
+    const promise = axios.post(postURL, pedirDeOutros);
+    promise.then(response => {
+
+        lastOrdersRequest()
+
+    });
+    promise.catch((error) => alert(error));
 }
 
 function lastOrdersRequest() {
 
     const promise = axios.get(getURL);
     promise.then(response => {
-
+        
+        ultimasCamisetas = response.data;
         lastOrdersRendering(response.data)
+        
     });
 
 }
@@ -146,12 +180,14 @@ lastOrdersRequest();
 
 function lastOrdersRendering(list) {
 
-    const allItens = document.querySelector(".allItens");
+    const allItens = document.querySelector(".all-itens");
 
-    list.forEach(item => {
+    allItens.innerHTML = "";
+
+    list.forEach((item, index) => {
 
         allItens.innerHTML += `
-            <div class="orderBox">
+            <div class="order-box" onclick="encomendarCriada(${index})">
                 <img src="${item.image}">
                 <p><strong>Criador:&nbsp</strong>${item.owner}</p>
             </div>

@@ -16,19 +16,19 @@
 <body>
     <div class="content">
         <header class="header">
-            <figure class="logo_nome">
+            <figure class="logo-nome">
                 <img class="logo" src="./assets/img/Logo.png">
             </figure>
         </header>
         <div class="container">
             <section class="box">
-                <div class="clothingCustomization">
-                    <div class="allOptions">
+                <div class="clothing-customization">
+                    <div class="all-options">
                         <div class="interaction">
                             <p>Escolha o modelo</p>
                         </div>
-                        <div class="iconGroup">
-                            <figure class="singleOption">
+                        <div class="icon-group">
+                            <figure class="single-option">
                                 <div class="circle model" onclick="selectModel(this)">
                                     <img class="" src="./assets/img/tshirt.png">
                                 </div>
@@ -51,7 +51,7 @@
                         <div class="interaction">   
                             <p>Escolha a gola</p>
                         </div>
-                        <div class="iconGroup">
+                        <div class="icon-group">
                             <figure class="singleOption">
                                 <div class="circle" onclick="selectNeck(this)">
                                     <img class="" src="./assets/img/GolaV.png">
@@ -74,7 +74,7 @@
                         <div class="interaction">   
                             <p>Escolha o tecido</p>
                         </div>
-                        <div class="iconGroup">
+                        <div class="icon-group">
                             <figure class="singleOption">
                                 <div class="circle" onclick="selectMaterial(this)">
                                     <img class="" src="./assets/img/Seda.png">
@@ -99,9 +99,9 @@
                         <div class="interaction">
                             <p>Imagem de referência</p>
                         </div>
-                        <input placeholder="   Insira o link" id="imgLink">
+                        <input placeholder="   Insira o link" id="imgLink" onkeyup="finishOrder()">
                     </div>
-                    <div class="confirmOrder" onclick="submitOrder()">
+                    <div class="confirm-order" onclick="submitOrder()">
                         <p>Confirmar pedido</p>
                     </div>
                 </div>
@@ -112,11 +112,11 @@
                 <img class="woman" src="./assets/img/ilustração.png">
             </aside>
         </div>
-        <div class="lastOrders">
-            <div class="lastOrdersTitle">
+        <div class="last-orders">
+            <div class="last-orders-title">
                 <p>Ultimos pedidos</p>
             </div>   
-            <div class="allItens"></div>
+            <div class="all-itens"></div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
