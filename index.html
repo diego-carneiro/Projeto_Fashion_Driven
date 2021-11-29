@@ -32,19 +32,19 @@
                                 <div class="circle model" onclick="selectModel(this)">
                                     <img class="" src="./assets/img/tshirt.png">
                                 </div>
-                                <p>T-shirt</p>
+                                <div>T-shirt</div>
                             </figure>
                             <figure class="singleOption">
                                 <div class="circle model" onclick="selectModel(this)">
                                     <img class="" src="./assets/img/Camiseta.png">
                                 </div>
-                                <p>Camiseta</p>
+                                <div>Camiseta</div>
                             </figure>
                             <figure class="singleOption">
                                 <div class="circle model" onclick="selectModel(this)">
                                     <img class="" src="./assets/img/Mangalonga.png">
                                 </div>
-                                <p>Manga longa</p>
+                                <div>Manga longa</div>
                             </figure>
 
                         </div>
@@ -53,22 +53,22 @@
                         </div>
                         <div class="iconGroup">
                             <figure class="singleOption">
-                                <div class="circle" onclick="selectCollar(this)">
+                                <div class="circle" onclick="selectNeck(this)">
                                     <img class="" src="./assets/img/GolaV.png">
                                 </div>
-                                <p>Gola V</p>
+                                <div class="type">Gola V</div>
                             </figure>
                             <figure class="singleOption">
-                                <div class="circle" onclick="selectCollar(this)">
+                                <div class="circle" onclick="selectNeck(this)">
                                     <img class="" src="./assets/img/GolaRedonda.png">
                                 </div>
-                                <p>Gola Redonda</p>
+                                <div class="type">Gola Redonda</div>
                             </figure>
                             <figure class="singleOption">
-                                <div class="circle" onclick="selectCollar(this)">
+                                <div class="circle" onclick="selectNeck(this)">
                                     <img class="" src="./assets/img/GolaPolo.png">
                                 </div>
-                                <p>Gola polo</p>
+                                <div class="type">Gola polo</div>
                             </figure>
                         </div>
                         <div class="interaction">   
@@ -76,22 +76,22 @@
                         </div>
                         <div class="iconGroup">
                             <figure class="singleOption">
-                                <div class="circle" onclick="selectCloth(this)">
+                                <div class="circle" onclick="selectMaterial(this)">
                                     <img class="" src="./assets/img/Seda.png">
                                 </div>
-                                <p>Seda</p>
+                                <div>Seda</div>
                             </figure>
                             <figure class="singleOption">
-                                <div class="circle" onclick="selectCloth(this)">
+                                <div class="circle" onclick="selectMaterial(this)">
                                     <img class="" src="./assets/img/Algodão.png">
                                 </div>
-                                <p>Algodão</p>
+                                <div>Algodão</div>
                             </figure>
                             <figure class="singleOption">
-                                <div class="circle" onclick="selectCloth(this)">
+                                <div class="circle" onclick="selectMaterial(this)">
                                     <img class="" src="./assets/img/Poliester.png">
                                 </div>
-                                <p>Poliéster</p>
+                                <div>Poliéster</div>
                             </figure>
                         </div>
                     </div>
@@ -99,9 +99,9 @@
                         <div class="interaction">
                             <p>Imagem de referência</p>
                         </div>
-                        <input placeholder="   Insira o link" id="imgInput">
+                        <input placeholder="   Insira o link" id="imgLink">
                     </div>
-                    <div class="confirmOrder">
+                    <div class="confirmOrder" onclick="submitOrder()">
                         <p>Confirmar pedido</p>
                     </div>
                 </div>
